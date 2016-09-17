@@ -19,5 +19,6 @@ outputLayerPredictions = sigmoid(outputLayerLinear);
 
 [maxPredictionValues, predictionClasses] = max(outputLayerPredictions);
 p = predictionClasses;
+p = p(:);
 
 end
